@@ -5,8 +5,8 @@ const Home = () => {
   return (
     <>
       <Navbar />
-        <div className='bg-red-400 flex items-center' style={{minHeight:'89vh'}}>
-            <div className='flex justify-center gap-5 flex-col items-start w-4/6 bg-yellow-300 h-96 px-20'>
+        <div className='flex items-center' style={{minHeight:'89vh'}}>
+            <div className='flex justify-center gap-5 flex-col items-start w-4/6  h-96 px-20'>
                     <h2 className='text-8xl'>
                         I'm Umar Qazi
                     </h2>
@@ -14,7 +14,7 @@ const Home = () => {
                         A full-stack developer from Islamabad, Pakistan. I am primarily focused in MERN stack. I build applications for fun.
                     </h2>
             </div>
-            <div className='flex justify-center items-center w-2/4 bg-blue-300 h-96'>
+            <div className='flex justify-center items-center w-2/4  h-96'>
                 <img src={dpimg} alt="dp" className='h-full rounded-full' />
             </div>
         </div>
