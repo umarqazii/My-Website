@@ -61,7 +61,7 @@ const Hero = () => {
             className="mt-16 flex justify-center gap-6"
           >
             <SocialLink href="https://github.com/umarqazii" icon={<Github />} />
-            <SocialLink href="https://www.linkedin.com/in/umar-qazi-61b62a24a/" icon={<Linkedin />} />
+            <SocialLink href="https://www.linkedin.com/in/umarqazii/" icon={<Linkedin />} />
             <SocialLink href="mailto:umarqazii983@gmail.com" icon={<Mail />} />
           </motion.div>
         </div>
