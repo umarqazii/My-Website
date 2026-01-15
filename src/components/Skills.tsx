@@ -5,7 +5,6 @@ import {
   SiTypescript,
   SiMongodb,
   SiFirebase,
-  SiSupabase,
   SiTailwindcss,
   SiMysql,
   SiPostgresql,

@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link to="home" smooth={true} duration={500} className="font-display font-bold text-2xl tracking-tighter cursor-pointer flex items-center gap-2 text-primary hover:text-white transition-colors">
           <Code className="w-8 h-8" />
-          <span>UQ</span>
+          <span>Umar Qazi</span>
         </Link>
         
         {/* Desktop Menu */}
