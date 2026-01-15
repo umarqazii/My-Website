@@ -150,7 +150,6 @@ const Projects = () => {
                     <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <Folder className="w-5 h-5 text-gray-500 group-hover:text-primary transition-colors" />
                   </div>
                   <p className="text-gray-400 text-sm mb-4 line-clamp-2">
                     {project.description}
