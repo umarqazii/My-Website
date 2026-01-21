@@ -1,28 +1,31 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import React from "react";
+import { motion } from "framer-motion";
+import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    role: 'Flutter Developer',
-    company: 'Veroke',
-    period: 'Aug 2025 - Present',
-    description: 'Specializing in cross-platform mobile applications using Flutter',
-    tech: ['Flutter', 'Firebase', 'APIs', 'State Management']
+    role: "Flutter Developer",
+    company: "Veroke",
+    period: "Aug 2025 - Present",
+    description:
+      "Specializing in cross-platform mobile applications using Flutter",
+    tech: ["Flutter", "Firebase", "APIs", "State Management"],
   },
   {
-    role: 'Full Stack Web Dev (Part Time)',
-    company: 'SRS Digital',
-    period: 'Jun 2025 - Present',
-    description: 'Specializing in cross-platform mobile applications using Flutter',
-    tech: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'PostgreSQL']
+    role: "Full Stack Web Dev (Part Time)",
+    company: "SRS Digital",
+    period: "Jun 2025 - Present",
+    description:
+      "Building responsive web applications with React and Node.js, focusing on performance and user experience.",
+    tech: ["React", "TypeScript", "Tailwind", "Node.js", "PostgreSQL"],
   },
   {
-    role: 'Salesforce Developer',
-    company: 'Veroke',
-    period: 'Feb 2025 - Jul 2025',
-    description: 'Developed and customized enterprise-grade solutions using Apex, Lightning Web Components (LWC), and platform integrations.',
-    tech: ['Apex', 'LWC', 'Salesforce Cloud', 'Integrations']
+    role: "Salesforce Developer",
+    company: "Veroke",
+    period: "Feb 2025 - Jul 2025",
+    description:
+      "Developed and customized enterprise-grade solutions using Apex, Lightning Web Components (LWC), and platform integrations.",
+    tech: ["Apex", "LWC", "Salesforce Cloud", "Integrations"],
   },
 ];
 
@@ -30,13 +33,15 @@ const Experience = () => {
   return (
     <section id="experience" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-white">Experience</h2>
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-4 text-white">
+            Experience
+          </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full" />
         </motion.div>
 
@@ -45,14 +50,14 @@ const Experience = () => {
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-primary to-transparent -translate-x-1/2" />
 
           {experiences.map((exp, index) => (
-            <motion.div 
+            <motion.div
               key={index}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className={`relative flex flex-col md:flex-row items-start mb-16 ${
-                index % 2 === 0 ? 'md:flex-row-reverse' : ''
+                index % 2 === 0 ? "md:flex-row-reverse" : ""
               }`}
             >
               {/* Spacer for left/right */}
@@ -64,19 +69,26 @@ const Experience = () => {
               </div>
 
               {/* Card */}
-              <div className={`flex-1 w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
+              <div
+                className={`flex-1 w-full md:w-1/2 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"}`}
+              >
                 <motion.div
-                  whileHover={{ scale: 1.03, boxShadow: '0 10px 25px rgba(0,0,0,0.2)' }}
+                  whileHover={{
+                    scale: 1.03,
+                    boxShadow: "0 10px 25px rgba(0,0,0,0.2)",
+                  }}
                   className="bg-surface p-6 rounded-xl border border-white/10 transition-all group cursor-default"
                 >
-                  <div className="flex items-center justify-between mb-4">
-                    <h3 className="text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors">
+                  <div className="flex items-start gap-4 mb-4">
+                    <h3 className="flex-1 text-xl md:text-2xl font-bold text-white group-hover:text-primary transition-colors leading-snug line-clamp-2">
                       {exp.role}
                     </h3>
-                    <span className="text-sm md:text-base text-accent font-medium px-3 py-1 bg-accent/10 rounded-full">
+
+                    <span className="shrink-0 whitespace-nowrap text-sm md:text-base text-accent font-medium px-3 py-1 bg-accent/10 rounded-full">
                       {exp.period}
                     </span>
                   </div>
+
                   <h4 className="text-lg md:text-xl text-gray-300 mb-4 font-medium flex items-center gap-2">
                     <Briefcase className="w-5 h-5 text-primary" /> {exp.company}
                   </h4>
