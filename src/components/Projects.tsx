@@ -6,6 +6,8 @@ import whatsyapp_img from "../assets/icon.png";
 import mymovies_img from "../assets/mymovies.png";
 import myresale_img from "../assets/myresale.png";
 import klaimr_img from "../assets/logo.webp";
+import giftcollab_img from "../assets/giftcollab.png"
+import securepass_img from "../assets/secure_pass.png"
 
 const categories = ["All", "Mobile", "Web Fullstack"];
 
@@ -25,7 +27,7 @@ const projects = [
     title: "WhatsYapp",
     category: "Mobile",
     description:
-      "A full-featured real-time messaging application built with Flutter, Firebase, and GetX. This app supports text messaging, image sharing, voice notes, and real-time voice calling.",
+      "A full-featured real-time messaging application built with Flutter, Firebase, and GetX. This app supports text messaging, image sharing, voice notes, and real-time voice and video calling.",
     tech: ["Flutter", "Firebase", "Cloudinary", "ZegoCloud", "GetX"],
     image: whatsyapp_img,
     github: "https://github.com/umarqazii/WhatsYapp-Flutter",
@@ -41,6 +43,26 @@ const projects = [
     image: myresale_img,
     github: "#",
     demo: "https://demo.myresale.id/",
+  },
+  {
+    title: "GiftCollab",
+    category: "Mobile",
+    description:
+      'GiftCollab is a modern, cross-platform mobile application designed to revolutionize the way friends and family celebrate life’s milestones. Moving beyond the limitations of traditional, static gift registries, GiftCollab introduces a "crowdfunding" model to gifting, allowing multiple guests to contribute partial amounts toward high-ticket items',
+    tech: ["Flutter", "Firebase", "Stripe", "Cloudinary" ,"GetX"],
+    image: giftcollab_img,
+    github: "https://github.com/umarqazii/GiftCollab.git",
+    demo: "#",
+  },
+  {
+    title: "SecurePass",
+    category: "Mobile",
+    description:
+      'Secure Pass is a cross-platform, offline-first password manager built with Flutter and Firebase. It employs a Zero-Knowledge Architecture, ensuring that your sensitive data is encrypted locally on your device before it ever touches the cloud.',
+    tech: ["Flutter" ,"GetX" ,"Firebase", "cryptography", "Flutter Secure Storage"],
+    image: securepass_img,
+    github: "https://github.com/umarqazii/Secure-Pass.git",
+    demo: "#",
   },
   {
     title: "MyMovies",
